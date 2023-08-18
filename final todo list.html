@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+  <style>
+    * {
+    margin: 0%;
+    padding: 0%;
+}
+
+@media (min-width: 370px) and (max-width: 380px) {
+    #main {
+        width: 120%;
+    }
+
+    #navbar .navbar1 {
+        height: 50px;
+    }
+
+    #heading h1 {
+        font-size: 35px;
+        margin-top: 10px;
+        position: absolute;
+        color: #008670;
+        right: -10vw;
+    }
+
+    #title .input1 {
+        width: 75%;
+        margin-left: 22px;
+        border-radius: 4px;
+        margin-right: 105px;
+        margin-top: 6px;
+    }
+
+    #title .input2 {
+        width: 75%;
+        margin-left: 20px;
+        height: 70px;
+        margin-top: 6px;
+        margin-right: 70px;
+    }
+
+    #title .title1 {
+        margin-left: -300px;
+    }
+
+    .paragraph1 {
+        padding-left: 70px;
+    }
+
+    .title2 {
+        padding-right: 5px;
+    }
+
+    #btn {
+        width: 350%;
+        font-size: 13px;
+        text-align: center;
+        position: absolute;
+        left: -265px;
+    }
+
+    #table1 h1 {
+        position: absolute;
+        left: 20px;
+        margin-top: 25px;
+        font-size: 25px;
+    }
+
+    #table1 table {
+        margin-top: 50px;
+        position: absolute;
+        left: -125px;
+    }
+
+    #th .th1 {
+        font-size: 17px;
+    }
+
+    #th .th2 {
+        position: absolute;
+        left: 200px;
+        font-size: 17px;
+
+    }
+
+    #th .th3 {
+        position: absolute;
+        left: 265px;
+        font-size: 17px;
+    }
+
+    #th .th4 {
+        position: absolute;
+        left: 400px;
+        font-size: 17px;
+    }
+
+    #tb .th1 {
+        margin-top: -8px;
+        font-size: 15px;
+        position: absolute;
+        left: 163px;
+    }
+
+    #tb .th2 {
+        margin-top: -8px;
+        position: absolute;
+        left: 193px;
+        font-size: 15px;
+    }
+
+    #tb .th3 {
+        font-size: 15px;
+        margin-top: -8px;
+        position: absolute;
+        left: 270px;
+        width: 40%;
+    }
+
+    #tb .th4 {
+        position: absolute;
+        left: 365px;
+        margin-top: -8px;
+        width: 12%;
+    }
+
+    #tb .th4 .anchor1 {
+        font-size: 12px;
+        width: 115%;
+        margin-top: 5px;
+        position: relative;
+        right: -21px;
+    }
+
+    #tb .th4 .anchor2 {
+        margin-top: -31.9px;
+        font-size: 12px;
+        position: absolute;
+        right: -65px;
+        width: 115%;
+    }
+}
+
+@media (min-width: 414px) and (max-width: 430px) {
+    #heading h1 {
+        font-size: 40px;
+        margin-left: 5%;
+    }
+
+    #title .title1 {
+        margin-right: 30px;
+    }
+
+    #title .input1 {
+        width: 75%;
+        margin-left: 28px;
+    }
+
+    #title .input2 {
+        width: 75%;
+        margin-left: 25px;
+    }
+
+    #btn {
+        font-size: 14px;
+        margin-left: 5px;
+    }
+
+    table {
+        margin-left: 5px;
+    }
+
+    #table1 table {
+        margin-top: 60px;
+    }
+
+    #table1 h1 {
+        padding-left: 5px;
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+    #tb .th4 .anchor1 {
+        width: 130%;
+        font-size: 13px;
+    }
+
+    #tb .th4 .anchor2 {
+        width: 130%;
+        font-size: 13px;
+        position: relative;
+        right: 5px;
+    }
+
+    #th .th1,
+    #th .th2,
+    #th .th3,
+    #th .th4 {
+        font-size: 20px;
+    }
+
+    #th .th2 {
+        margin-left: 0px;
+
+    }
+
+    #th .th3 {
+        margin-left: 20px;
+    }
+
+    #th .th4 {
+        margin-left: 50px;
+    }
+
+    #tb .th1,
+    #tb .th2,
+    #tb .th3,
+    #tb .th4 {
+        font-size: 18px;
+    }
+
+    #th .th2 {
+        margin-left: 15px;
+    }
+
+    #tb .th1 {}
+
+    #tb .th2 {
+        margin-left: 10px;
+    }
+
+    #tb .th3 {
+        margin-left: 15px;
+    }
+
+    #tb .th4 .anchor1 {
+        margin-left: 50px;
+    }
+
+    #tb .th4 .anchor2 {
+        margin-left: 122px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 365px) {
+    #title .title1 {
+        margin-left: -295px;
+    }
+
+    #title .input1 {
+        width: 75%;
+        margin-left: 18px;
+    }
+
+    #title .input2 {
+        width: 75%;
+        margin-left: 20px;
+    }
+
+    #tb .th4 .anchor1 {
+        width: 105%;
+        font-size: 11px;
+        margin-left: 3px;
+    }
+
+    #tb .th4 .anchor2 {
+        width: 110%;
+        margin-right: 2px;
+        font-size: 11px;
+    }
+
+    #tb .th1,
+    #tb .th2,
+    #tb .th3 {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 412px) and (max-width: 413px) {
+    #btn {
+        margin-left: 5px;
+        font-size: 16px;
+    }
+
+    #title .title1 {
+        margin-right: 25px;
+    }
+
+    #title .input1 {
+        width: 70%;
+        margin-left: 30px;
+    }
+
+    #title .input2 {
+        width: 70%;
+        margin-left: 5px;
+    }
+
+    table {
+        margin-left: 5px;
+    }
+
+    #table1 h1 {
+        margin-left: 5px;
+        font-size: 30px;
+    }
+
+    #tb .th4 .anchor2 {
+        margin-top: -32px;
+        margin-right: -4px;
+    }
+
+    #heading h1 {
+        font-size: 40px;
+    }
+
+    #th .th1,
+    #th .th2,
+    #th .th3,
+    #th .th4 {
+        font-size: 19px;
+    }
+
+    #th .th1,
+    #th .th2,
+    #th .th3,
+    #th .th4 {
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #navbar {
+        height: 50px;
+        background-color: #222529;
+    }
+
+    #heading h1 {
+        font-size: 40px;
+        margin-top: -20px;
+        text-align: center;
+        /* width: 60%; */
+    }
+
+    #tb .th4 .anchor1 {
+        height: 28px;
+        position: relative;
+        right: 10px;
+    }
+
+    #tb .th4 .anchor2 {
+        height: 28px;
+        position: relative;
+        left: -30px;
+        top: 2px;
+    }
+
+    #tb .th1,
+    #tb .th2,
+    #tb .th3,
+    #tb .th4 {
+        font-size: 15px;
+    }
+
+    #tb .th3 {
+        position: relative;
+        left: 90px;
+    }
+
+    #th .th4 {
+        margin-right: -10px;
+    }
+
+    #th .th2 {}
+
+    .title1 {
+        margin-left: -100px;
+    }
+}
+
+@media (min-width: 390px) and (max-width: 395px) {
+    #heading h1 {
+        font-size: 35px;
+        margin-right: 50%;
+        width: 100%;
+    }
+
+    #title .input1 {
+        width: 70%;
+        margin-left: 25px;
+    }
+
+    #title .input2 {}
+
+    #title .title1 {
+        margin-right: 10px;
+    }
+
+    .paragraph1 {}
+
+    .title2 {}
+
+    #btn {
+        margin-left: 2px;
+    }
+
+    #table1 h1 {
+        margin-left: 2px;
+        font-size: 28px;
+    }
+
+    #table1 table {
+        margin-left: 2px;
+    }
+
+    #th .th1 {}
+
+    #th .th2 {}
+
+    #th .th3 {}
+
+    #th .th4 {}
+
+    #tb .th1 {}
+
+    #tb .th2 {}
+
+    #tb .th3 {
+        margin-left: -5px;
+    }
+
+    #tb .th4 {}
+
+    #tb .th4 .anchor1 {}
+
+    #tb .th4 .anchor2 {
+        margin-right: -2px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    #navbar {}
+
+    #heading h1 {
+        width: 60%;
+        font-size: 30px;
+        position: relative;
+        bottom: 30px;
+        margin-bottom: -30px;
+    }
+
+    #title .input1 {
+        position: relative;
+        right: 88px;
+        right: 170px;
+        height: 30px;
+        width: 50%;
+    }
+
+    #title .input2 {
+        position: relative;
+        right: 172px;
+        margin-top: 5px;
+        height: 80px;
+        width: 50%;
+    }
+
+    #title .title1 {
+        position: relative;
+        right: 80px;
+    }
+
+    .paragraph1 {
+        position: relative;
+        right: 40px;
+    }
+
+    .title2 {
+        position: relative;
+        right: 68px;
+    }
+
+    #btn {
+        width: 200%;
+        margin-left: -255px;
+    }
+
+    #table1 h1 {
+        margin-left: -255px;
+        font-size: 30px;
+    }
+
+    #table1 table {
+        margin-left: -255px;
+
+    }
+
+    #th .th2 {
+        margin-left: -70px;
+    }
+
+    #th .th3 {}
+
+    #th .th4 {
+        margin-left: -180px;
+    }
+
+    #th .th1 {}
+
+    #th .th2 {
+        margin-left: -90px;
+    }
+
+
+    #th .th3 {
+        margin-left: -220px;
+
+    }
+
+    #th .th4 {
+        position: absolute;
+        left: 685px;
+    }
+
+    #tb .th1 {
+        margin-left: 15px;
+    }
+
+    #tb .th2 {
+        margin-left: -95px;
+    }
+
+    #tb .th3 {
+        position: relative;
+        left: 79px;
+        width: 30%;
+    }
+
+    #tb .th4 {
+        position: absolute;
+        left: 500px;
+    }
+
+    #tb .th4 .anchor1 {
+        width: 100%;
+    }
+
+    #tb .th4 .anchor2 {
+        width: 100%;
+        position: relative;
+        right: 17px;
+
+    }
+}
+
+@media (min-width: 768px) and (max-width: 800px) {
+
+    #heading h1 {
+        font-size: 40px;
+        margin-top: 10px;
+        margin-right: 50%;
+        width: 100%;
+    }
+
+    #title .input1 {
+        width: 80%;
+        margin-right: -210px;
+        margin-top: 5px;
+        margin-left: 25px;
+    }
+
+    #title .input2 {
+        margin-right: -240px;
+        width: 80%;
+        margin-top: 5px;
+    }
+
+    #title .title1 {
+        font-size: 20px;
+        margin-right: -10px;
+    }
+
+
+    #title .paragraph1 {
+        margin-right: -10px;
+        font-size: 15px;
+    }
+
+    #title .title2 {
+        margin-right: -30px;
+        font-size: 20px;
+    }
+
+    #btn {
+        width: 250%;
+        margin-left: -34%;
+        font-size: 20px;
+    }
+
+    #table1 h1 {
+        margin-left: -260px;
+        font-size: 35px;
+    }
+
+    #table1 table {
+        margin-left: -240px;
+    }
+
+    #th .th1 {
+        font-size: 25px;
+    }
+
+    #th .th2 {
+        margin-left: -70px;
+        font-size: 25px;
+
+    }
+
+    #th .th3 {
+        margin-left: -180px;
+        font-size: 25px;
+    }
+
+    #th .th4 {
+        margin-left: 50px;
+        font-size: 25px;
+
+    }
+
+    #tb .th1 {
+        margin-left: 20px;
+    }
+
+    #tb .th2 {
+        margin-left: -77px;
+    }
+
+    #tb .th3 {
+        position: absolute;
+        left: 320px;
+    }
+
+    #tb .th4 {
+        margin-left: -510px;
+    }
+
+    #tb .th4 .anchor1 {
+        position: relative;
+        left: 725px;
+        width: 130%;
+    }
+
+    #tb .th4 .anchor2 {
+        width: 130%;
+        position: relative;
+        left: 720px;
+        bottom: 1px;
+    }
+}
+
+#navbar {
+    width: 100%;
+    height: 50px;
+}
+
+#heading {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding-top: 4vh;
+}
+
+#title {
+    text-align: center;
+    padding-top: 3vh;
+}
+
+.input1 {
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    outline: none;
+    background: none;
+    width: 70%;
+    line-height: 250%;
+    margin-top: 2px;
+}
+
+.title1 {
+    margin-left: -68.4%;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.paragraph1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: -61%;
+    padding-top: 6px;
+    font-size: 14px;
+    color: #595c5f;
+}
+
+.title2 {
+    margin-left: -66%;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.input2 {
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    outline: none;
+    background: none;
+    width: 70%;
+    line-height: 100%;
+    margin-top: 2px;
+}
+
+#button {
+    margin-left: 285px;
+    margin-top: 10px;
+    width: 5%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #00997f;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+
+}
+
+#button a {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+
+#table1 {
+    width: 100%;
+    height: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 50px;
+    margin-left: 285px;
+    font-size: 20px;
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    position: relative;
+    left: -145px;
+    justify-content: space-between;
+
+}
+
+table th {
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+table .th3 {
+    position: absolute;
+    left: 500px;
+    white-space: normal;
+}
+
+table .th2 {
+    position: absolute;
+    left: 300px;
+}
+
+table .th1 {
+    position: absolute;
+    left: 150px;
+}
+
+table .th4 {
+    position: absolute;
+    left: 1200px;
+
+}
+
+#tb .th3 {
+    position: absolute;
+    left: 500px;
+    white-space: normal;
+}
+
+#tb .th2 {
+    position: absolute;
+    left: 300px;
+}
+
+#tb .th1 {
+    position: absolute;
+    left: 150px;
+}
+
+#table .th4 {
+    position: absolute;
+    left: 1200px;
+
+}
+
+table td {
+    padding-top: 70px;
+}
+
+.th4 a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #dee2e6;
+    background-color: #00997f;
+    border-radius: 6px;
+    width: 140%;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.th4 .anchor2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #dee2e6;
+    background-color: #00997f;
+    border-radius: 6px;
+    width: 140%;
+    line-height: 30px;
+    font-size: 15px;
+    margin-left: 150%;
+    margin-top: -76%;
+}
+
+table .action {
+    position: absolute;
+    /* left: 2000px; */
+    width: 8%;
+
+}
+
+#button:hover {
+    background-color: #008670;
+}
+
+.anchor2:hover {
+    background-color: #008670;
+}
+
+.anchor1:hover {
+    background-color: #008670;
+}
+  </style>
+<body>
+    <div id="main">
+
+        <div id="navbar" class="navbar1">
+        </div>
+
+        <div id="heading">
+            <h1>TODO-List</h1>
+        </div>
+        <div id="title">
+          <label for="title" class="title1">Title</label><br>
+          <input type="text" class="input1">
+          <p class="paragraph1">Add Item To Your TODO List</p>
+        </div>
+        
+        <div id="title">
+          <label for="title" class="title2">Description</label><br>
+          <textarea name="text" class="input2" cols="30" rows="10"></textarea>
+        </div>
+        <div id="btn">   
+          <div id="button">
+                <a href="#">Add to list</a>
+            </div>
+         </div>
+
+        <div id="table1">
+            <h1>Your Item</h1>
+            <div class="table-container">
+                <table>
+                    <thead id="th">
+                        <tr>
+                            <th class="th1">S.NO</th>
+                            <th class="th2">Title </th>
+                            <th class="th3">Description</th>
+                            <th class="th4 action">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tb">
+                        <td class="th1">1</td>
+                        <td class="th2">Project1</td>
+                        <td class="th3">Tomorrow I'll complete my first project</td>
+                        <td class="th4"><a href="#" class="anchor1">Delete</a> <a href="#" class="anchor2">Edit</a></td>
+                    </tbody>
+                </table>
+            </div>
+      </div>    
+    </div>
+   <script>
+    // Get references to the elements
+const addButton = document.querySelector('#button a');
+const tableBody = document.querySelector('#tb');
+
+// Function to delete a row
+function deleteRow(event) {
+  const row = event.target.closest('tr');
+  if (row) {
+    row.remove();
+  }
+}
+
+// Function to edit a row
+function editRow(event) {
+  const row = event.target.closest('tr');
+  if (row) {
+    const titleCell = row.querySelector('.th2');
+    const descriptionCell = row.querySelector('.th3');
+
+    // Create input fields for editing
+    const newTitleInput = document.createElement('input');
+    newTitleInput.type = 'text';
+    newTitleInput.value = titleCell.textContent;
+
+    const newDescriptionInput = document.createElement('textarea');
+    newDescriptionInput.value = descriptionCell.textContent;
+
+    // Replace content with input fields
+    titleCell.textContent = '';
+    descriptionCell.textContent = '';
+    
+    titleCell.appendChild(newTitleInput);
+    descriptionCell.appendChild(newDescriptionInput);
+
+    // Focus the title input for user convenience
+    newTitleInput.focus();
+
+    // Change the event listener to handle edit submission
+    const editButton = row.querySelector('.anchor2');
+    editButton.removeEventListener('click', editRow);
+    editButton.textContent = 'Save';
+    editButton.addEventListener('click', saveEditedRow);
+  }
+}
+
+// Function to save the edited row
+function saveEditedRow(event) {
+  const row = event.target.closest('tr');
+  if (row) {
+    const titleCell = row.querySelector('.th2 input');
+    const descriptionCell = row.querySelector('.th3 textarea');
+
+    const newTitle = titleCell.value;
+    const newDescription = descriptionCell.value;
+
+    if (newTitle && newDescription) {
+      titleCell.parentNode.textContent = newTitle;
+      descriptionCell.parentNode.textContent = newDescription;
+
+      // Change the event listener back to editRow
+      const editButton = row.querySelector('.anchor2');
+      editButton.removeEventListener('click', saveEditedRow);
+      editButton.textContent = 'Edit';
+      editButton.addEventListener('click', editRow);
+    } else {
+      alert('Please enter both title and description.');
+    }
+  }
+}
+
+// Function to add a new row
+function addRow(title, description) {
+  // Clear existing table body
+  tableBody.innerHTML = '';
+
+  // Create a new row
+  const newRow = document.createElement('tr');
+  newRow.innerHTML = `
+    <td class="th1">${tableBody.children.length + 1}</td>
+    <td class="th2">${title}</td>
+    <td class="th3">${description}</td>
+    <td class="th4"><a href="#" class="anchor1">Delete</a> <a href="#" class="anchor2">Edit</a></td>
+  `;
+
+  // Append the new row to the table body
+  tableBody.appendChild(newRow);
+
+  // Add event listeners to delete and edit buttons in the new row
+  const deleteButton = newRow.querySelector('.anchor1');
+  const editButton = newRow.querySelector('.anchor2');
+
+  deleteButton.addEventListener('click', deleteRow);
+  editButton.addEventListener('click', editRow);
+}
+
+// Function to handle "Add to List" button click
+function handleAddToList() {
+  const titleInput = document.querySelector('.input1');
+  const descriptionInput = document.querySelector('.input2');
+
+  const title = titleInput.value;
+  const description = descriptionInput.value;
+
+  if (title && description) {
+    addRow(title, description);
+    titleInput.value = '';
+    descriptionInput.value = '';
+  } else {
+    alert('Please enter both title and description.');
+  }
+}
+
+// Add event listener to "Add to List" button
+addButton.addEventListener('click', handleAddToList);
+
+// Add event listeners to existing delete and edit buttons
+const deleteButtons = document.querySelectorAll('.anchor1');
+const editButtons = document.querySelectorAll('.anchor2');
+
+deleteButtons.forEach(button => {
+  button.addEventListener('click', deleteRow);
+});
+
+editButtons.forEach(button => {
+  button.addEventListener('click', editRow);
+});
+
+   </script>
+</body>
+</html>
